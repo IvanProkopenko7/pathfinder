@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>All paths lead to the goal</title>
+  <link rel="icon" type="image/x-icon" href="/icon.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <h2>Counting Paths on a 7×7 Grid (DP Visualization)</h2>
+
+    <form>
+      <label for="sx">Start X:</label>
+      <input type="number" id="sx" value="1" min="1" max="7" /><br />
+      <label for="sy">Start Y:</label>
+      <input type="number" id="sy" value="1" min="1" max="7" /><br />
+      <label for="ex">End X:</label>
+      <input type="number" id="ex" value="7" min="1" max="7" /><br />
+      <label for="ey">End Y:</label>
+      <input type="number" id="ey" value="7" min="1" max="7" /><br />
+      <label for="tx">Trap X:</label>
+      <input type="number" id="tx" value="3" min="1" max="7" /><br />
+      <label for="ty">Trap Y:</label>
+      <input type="number" id="ty" value="3" min="1" max="7" /><br />
+      <label for="steps">Steps:</label>
+      <input type="number" id="steps" value="0" min="0" max="14" /><br />
+      <label for="speed">Speed coefficient:</label>
+      <input type="number" id="speed" value="1" min="0.2" max="10" step="0.2" />
+    </form>
+    <div class="prog_container">
+      <div id="controls">
+        <button onclick="start()">▶ Play</button>
+      </div>
+
+
+      <div id="grid"></div>
+      <div class="results">
+        <span id="stepLabel">Step 0</span>
+        <div id="total">Total: 0</div>
+        <div id="avoiding">Avoiding: 0</div>
+        <div id="result">Result: 0</div>
+      </div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+
+</body>
+
+</html>

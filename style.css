@@ -1,0 +1,96 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      margin-top: 10px;
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .prog_container {
+      display: flex;
+      width: 100%;
+      gap: 30px;
+      justify-content: center;
+      padding: 30px 0;
+    }
+    form {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 10px 0;
+    }
+    .results {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      font-size: 20px;
+    }
+    input[type="number"] {
+      width: 60px;
+      padding: 6px;
+      margin-right: 10px;
+      font-size: 14px;
+    }
+    label {
+      margin-right: 15px;
+      font-size: 14px;
+    }
+    #controls {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    button {
+      padding: 8px 14px;
+      margin-right: 6px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    #stepLabel {
+      font-weight: bold;
+    }
+
+    #grid {
+      display: grid;
+      grid-template-columns: repeat(7, 50px);
+      gap: 4px;
+    }
+
+    .cell {
+      width: 50px;
+      height: 50px;
+      border-radius: 6px;
+      border: 1px solid #bbb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      background-color: white;
+      transition: background-color 0.4s;
+    }
+
+    .start {
+      background: #4caf50 !important;
+      color: white;
+    }
+
+    .end {
+      background: #f44336 !important;
+      color: white;
+    }
+
+    .must {
+      background: #ffeb3b !important;
+      color: black;
+    }
+    #result {
+      font-size: 32px;
+      font-weight: bold;
+    }
